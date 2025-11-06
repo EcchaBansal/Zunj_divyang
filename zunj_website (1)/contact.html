@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zunj Divyang Sanstha Ashram Training Center — Contact</title>
+  <meta name="description" content="Contact Zunj Divyang Sanstha Ashram Training Center for donations, volunteering, and inquiries.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #333;
+      background-color: #fdfdfd;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 60px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #222;
+      margin-left: 12px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #008080;
+    }
+
+    .btn {
+      background: #008080;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #006666;
+    }
+
+    /* Hero Section */
+    header {
+      background: linear-gradient(to right, rgba(115, 123, 123, 0.75), rgba(0, 128, 128, 0.4)),
+        url('https://scontent-bom5-1.xx.fbcdn.net/v/t39.30808-6/504821051_4101627860121685_233333480393784355_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=szCtY87i9pAQ7kNvwEHPuxk&_nc_oc=AdltzHNMT3NleNNoMpFS_7RQ3sv5LG6RzyP_de9f_vD6jKZNK2MGz2Iqk4sc9H5Ivmg&_nc_zt=23&_nc_ht=scontent-bom5-1.xx&_nc_gid=0y5uIGJDXkDC2D-rgf1__Q&oh=00_AfhFFrjQ4UYvhFzv6LPOrkFVWm697dAsENAgeWg2NC6swg&oe=6911702B') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* Contact Section */
+    main.container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #008080;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-card h3 {
+      color: #004d4d;
+      margin-bottom: 12px;
+    }
+
+    .contact-card p {
+      margin: 6px 0;
+    }
+
+    .map {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-top: 40px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+
+    /* Donation Section */
+    .donate-section {
+      background: #008080;
+      color: #fff;
+      padding: 50px 20px;
+      border-radius: 16px;
+      margin-top: 60px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .donate-section h2 {
+      margin-bottom: 12px;
+    }
+
+    .donate-section p {
+      margin-bottom: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .donate-section a {
+      background: #fff;
+      color: #008080;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .donate-section a:hover {
+      background: #004d4d;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background: #004d4d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 16px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="https://scontent-bom5-1.xx.fbcdn.net/v/t39.30808-6/465669481_3920091304942009_4263673351295849416_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=X8oYZwsu5JsQ7kNvwECH6Zg&_nc_oc=AdkHIBSxPFw5vCPCAXBhiEGGvhbkCAFDrdamlH80MBh4yWjLk5TlaaM0Wej137Y1sVQ&_nc_zt=23&_nc_ht=scontent-bom5-1.xx&_nc_gid=9MX_9zwVR1UdDcTmNuY_eQ&oh=00_AfgBTpYW96FLPF67YnnuYWQBmI61wUF_4K5PoW6zDNcfUw&oe=69116E70" class="logo-img" alt="Zunj logo">
+      <div class="site-title">Zunj Divyang Sanstha Ashram Training Center</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="marathi.html">मराठी</a></li>
+    </ul>
+    <a class="btn" href="donate.html">Donate</a>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <h1>Contact & Connect</h1>
+    <p>We’d love to hear from you! Reach out for donations, volunteering, or partnerships — together we can empower lives.</p>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="container">
+    <h2>Get in Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📞 Phone</h3>
+        <p><strong>+91 9011452216</strong></p>
+        <p><strong>+91 8788535200</strong></p>
+      </div>
+      <div class="contact-card">
+        <h3>📍 Address</h3>
+        <p>ISKCON Visitor Car Parking, MQ44+4HW,<br> ISKCON Temple Road, Ganesh Nagar,<br> Ravet, Pimpri-Chinchwad, Maharashtra 411044</p>
+      </div>
+      <div class="contact-card">
+        <h3>📧 Email</h3>
+        <p><a href="mailto:zunjdivyang@gmail.com" style="color:#008080;text-decoration:none;">zunjdivyang@gmail.com</a></p>
+        <p><a href="mailto:info@zunj.org" style="color:#008080;text-decoration:none;">info@zunj.org</a></p>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=ISKCON%20Temple%20Ravet%20Pune&output=embed" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="donate-section">
+      <h2 style="color: white;">Support Our Mission 💚</h2>
+      <p>Your contribution helps us provide training, housing, and opportunities for differently-abled individuals to lead empowered lives.</p>
+      <a href="donate.html">Donate Now</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <div><strong>Contact:</strong> 9011452216 / 8788535200 &nbsp; | &nbsp; <strong>Address:</strong> ISKCON Visitor Car Parking, MQ44+4HW, ISKCON Temple Road, Ravet, Pimpri-Chinchwad, Maharashtra 411044</div>
+      <div style="margin-top:8px;">© Zunj Divyang Sanstha Ashram Training Center — All Rights Reserved</div>
+      <div style="margin-top:10px;">
+        <a href="https://www.facebook.com/zunjdivyaangsanstha" target="_blank" rel="noopener noreferrer">Facebook</a> |
+        <a href="https://www.instagram.com/zunjdivyaangsanstha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a> |
+        <a href="#" style="pointer-events:none;opacity:0.6;">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

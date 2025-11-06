@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Zunj — Donate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7f7, #fff);
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 60px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-img { width: 45px; height: 45px; border-radius: 50%; }
+    .extra-logo { width: 50px; height: 50px; border-radius: 50%; }
+
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #222;
+      margin-left: 12px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover { color: #008080; }
+
+    .form-container {
+      max-width: 500px;
+      margin: 100px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #008080;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #008080;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #FF6F00;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover { background: #e55c00; }
+
+    .text-center {
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .thank-you {
+      display: none;
+      text-align: center;
+      background: #e0fff5;
+      color: #00695c;
+      border: 1px solid #00bfa5;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 16px;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @media(max-width:768px) {
+      nav {flex-direction: column; gap: 10px;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="https://scontent-bom5-1.xx.fbcdn.net/v/t39.30808-6/465669481_3920091304942009_4263673351295849416_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=X8oYZwsu5JsQ7kNvwECH6Zg&_nc_oc=AdkHIBSxPFw5vCPCAXBhiEGGvhbkCAFDrdamlH80MBh4yWjLk5TlaaM0Wej137Y1sVQ&_nc_zt=23&_nc_ht=scontent-bom5-1.xx&_nc_gid=9MX_9zwVR1UdDcTmNuY_eQ&oh=00_AfgBTpYW96FLPF67YnnuYWQBmI61wUF_4K5PoW6zDNcfUw&oe=69116E70" class="logo-img" alt="Zunj logo">
+      <div class="site-title">Zunj Divyang Sanstha Ashram Training Center</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="marathi.html">मराठी</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-container">
+    <h2>Make a Donation</h2>
+    <form id="donateForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label>Donation Amount (₹)</label>
+        <input type="number" id="amount" placeholder="Enter amount you wish to donate" required min="1">
+      </div>
+      <div class="form-group">
+        <label>Message (optional)</label>
+        <textarea id="message" placeholder="Write your message or wishes..."></textarea>
+      </div>
+      <button type="submit">Donate Now</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMsg">
+      💚 Thank you for your kind contribution! Your support helps us empower differently-abled lives.
+    </div>
+  </div>
+
+  <script>
+    // Simple thank-you simulation (can connect to backend later)
+    document.getElementById("donateForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      document.getElementById("thankYouMsg").style.display = "block";
+      this.reset();
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
